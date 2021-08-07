@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar  build/libs/personapi.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar  build/libs/personapi-0.0.1-SNAPSHOT.jar
