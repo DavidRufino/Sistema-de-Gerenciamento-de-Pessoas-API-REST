@@ -1,0 +1,1 @@
+web: java -jar build/libs/Sistema-de-Gerenciamento-de-Pessoas-API-REST-1.0.jar
