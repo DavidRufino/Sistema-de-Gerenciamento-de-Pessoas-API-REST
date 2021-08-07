@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar  build/libs/Sistema-de-Gerenciamento-de-Pessoas-API-REST-1.0.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar  build/libs/personapi-1.0.jar
