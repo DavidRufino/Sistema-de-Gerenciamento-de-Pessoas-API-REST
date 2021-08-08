@@ -1,5 +1,6 @@
 package one.digitalinnovation.personapi.controller;
 
+import lombok.AllArgsConstructor;
 import one.digitalinnovation.personapi.dto.request.PersonDTO;
 import one.digitalinnovation.personapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.personapi.entity.Person;
@@ -15,6 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/people")
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 
     /*
@@ -26,12 +28,7 @@ public class PersonController {
     *
     * */
 
-    private PersonService personService;
-
-    @Autowired
-    public PersonController(PersonService personService) {
-        this.personService = personService;
-    }
+    private PersonService personService;    //  Construtor já esta sendo gerado, por conta do Lombok: @AllArgsConstructor(onConstructor = @__(@Autowired))
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
